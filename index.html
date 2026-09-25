@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FLEXY GFX | Creative Designer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<div class="fx-mouse">
+    <div class="fx-arrow"></div>
+    <div class="fx-light"></div>
+</div>
+
+<script>
+const mouse = document.querySelector(".fx-mouse");
+
+document.addEventListener("mousemove", (e) => {
+    mouse.style.left = e.clientX + "px";
+    mouse.style.top = e.clientY + "px";
+});
+
+document.querySelectorAll("a, button").forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+        mouse.classList.add("fx-hover");
+    });
+
+    el.addEventListener("mouseleave", () => {
+        mouse.classList.remove("fx-hover");
+    });
+});
+</script>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            FLEXY<span>GFX</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#works">WORKS</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+        <a href="#contact" class="nav-btn">
+            LET'S TALK ↗
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                ✦ CREATIVE GRAPHIC DESIGNER
+            </p>
+
+            <h1>
+                FLEXY
+                <span>GFX</span>
+            </h1>
+
+            <h2>
+                I TURN IDEAS INTO
+                <strong>VISUAL IMPACT.</strong>
+            </h2>
+
+            <p class="hero-text">
+                I'm <strong>Sumit</strong>,
+                a creative graphic designer creating
+                bold visuals for gamers, creators,
+                esports teams and modern brands.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#works" class="primary-btn">
+                    EXPLORE MY WORK ↗
+                </a>
+
+              
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="circle"></div>
+
+            <div class="visual-card">
+
+                <span class="card-number"></span>
+
+               <div class="hero-side">
+
+    <div class="hero-image-box">
+        <img src="Image/profile.png" alt="FLEXY GFX">
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MARQUEE ================= -->
+
+    <div class="marquee">
+
+        <div>
+            ✦ POSTER DESIGN ✦ LOGO DESIGN ✦ BRANDING ✦
+            THUMBNAILS ✦ CREATIVE DESIGN ✦
+        </div>
+
+    </div>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <p class="section-tag">
+         ABOUT ME
+        </p>
+
+        <h2>
+           
+        </h2>
+
+        <div class="about-grid">
+
+            <p>
+                I'm <strong>Sumit</strong>,
+                the creator behind <strong>FLEXY GFX</strong>.
+                I am a professional graphic designer with a passion for creating
+                modern and memorable visual designs.
+
+                I specialize in crafting bold graphics for gamers, creators, esports teams, and modern brands. My work includes logo design, branding, thumbnails, posters, and more.
+            </p>
+
+            <div class="details">
+
+               
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WORKS ================= -->
+
+    <section class="works" id="works">
+
+        <p class="section-tag">
+           
+        </p>
+
+        <h2>
+            MY
+            <span>CREATIONS.</span>
+        </h2>
+
+        <div class="work-grid">
+
+            <div class="work-card">
+                
+                <img src="image\poster.jpg" alt="Poster Design">
+                <h3>ESPORTS<br>DESIGN</h3>
+            </div>
+
+            <div class="work-card">
+                
+                <img src="image\logo.jpg" alt="Logo Design">
+                <h3>LOGO<br>DESIGN</h3>
+            </div>
+
+            <div class="work-card">
+                
+                <img src="image\thumbnail.jpg" alt="Thumbnail Design">
+                <h3>YOUTUBE<br>THUMBNAILS</h3>
+            </div>
+
+            <div class="work-card">
+                <img src="image\jersey.jpg" alt="Jersey Design">
+                <h3>JERSEY<br>DESIGN</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+     <section class="services" id="services">
+
+    <div class="services-box">
+
+        <div class="services-heading">
+            <p>SERVICES</p>
+            <h2>WHAT I <span>CREATE.</span></h2>
+            <div class="heading-line"></div>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+               
+                <h3>LOGO DESIGN</h3>
+                <p>Unique and memorable logos for brands and creators.</p>
+            </div>
+
+            <div class="service-card">
+                
+                <h3>BRANDING</h3>
+                <p>Strong visual identity that gives your brand its own style.</p>
+            </div>
+
+            <div class="service-card">
+                
+                <h3>THUMBNAILS</h3>
+                <p>High-impact thumbnails designed to grab attention.</p>
+            </div>
+
+            <div class="service-card">
+                
+                <h3>JERSEY DESIGN</h3>
+                <p>Professional esports and gaming jersey designs.</p>
+            </div>
+
+            <div class="service-card">
+               
+                <h3>POSTER & BANNER</h3>
+                <p>Bold promotional posters and banners with strong visuals.</p>
+            </div>
+
+            <div class="service-card">
+                
+                <h3>SOCIAL MEDIA</h3>
+                <p>Creative graphics made for modern social platforms.</p>
+            </div>
+
+        </div>
+
+       <div class="tools-box">
+
+    <div class="tools-icon">✦</div>
+
+    <div class="tools-content">
+        <span>MY CREATIVE TOOLS</span>
+        <h3>TOOLS I USE TO CREATE</h3>
+
+        <div class="tools-list">
+            <div class="tool-item">
+                <b>PS</b>
+                <span>Photoshop</span>
+            </div>
+
+            <div class="tool-item">
+                <b>CV</b>
+                <span>Canva</span>
+            </div>
+
+            <div class="tool-item">
+                <b>FG</b>
+                <span>Figma</span>
+            </div>
+
+            <div class="tool-item">
+                <b>AI</b>
+                <span>Illustrator</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+    <!-- HIGHLIGHTS -->
+<section class="highlights" id="highlights">
+
+    <div class="section-title-box">
+        
+        <h2>CONTACT US ON</h2>
+    </div>
+
+    <div class="highlight-grid">
+
+        <a href="https://wa.me/917520830960"
+           class="highlight whatsapp-highlight"
+           target="_blank"
+           rel="noopener">
+
+            <div class="highlight-icon">WHATSAPP</div>
+
+        </a>
+
+        <a href="https://www.instagram.com/imm_sumitt_?stkn=dHd3YXlvNmlhOTFs"
+   class="highlight instagram-highlight"
+   target="_blank"
+   rel="noopener">
+    <div class="highlight-icon">INSTAGRAM</div>
+</a>
+    </div>
+
+</section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+ 
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <p class="section-tag">
+            
+        </p>
+
+        <h2>
+            HAVE AN IDEA?
+            <span>LET'S BUILD IT.</span>
+        </h2>
+
+        <p>
+            Available for creative projects,
+            collaborations and design work.
+        </p>
+
+        <a href="mailto:yourmail@gmail.com"
+           class="contact-main">
+            START A PROJECT ↗
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            FLEXY<span>GFX</span>
+        </div>
+
+        <p>
+            © 2026 FLEXY GFX — All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
